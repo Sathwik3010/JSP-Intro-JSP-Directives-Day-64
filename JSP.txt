@@ -1,0 +1,101 @@
+JSP (Java Server Pages)
+-----------------------
+what are the difference between Servlets and JSP's 
+
+1. If we want to prepare web applications by using servlets the web application developers must have very good knowledge on java
+
+If we want to prepare web applications by using JSP's then web application developers are not required to have java knowledge 
+
+Note: the main intension of jsp's is to reduce java code as possible in web applications
+
+
+2. In web applications servlets are very much suitable to take request and to handle request.
+In web applications JSP's are very much suitable for generating dynamic responses with a very good look and feel
+
+3. In web applications servlets are mainly for request processing.
+In web applications JSP's are mainly used for presentation.
+
+4. IN MVC based web application we will use Servlet as controller.
+   IN MVC based web application we will use a set of jsp pages as the view part
+
+5. If we perform modifications of an existing servlet in a web application then we must perform recompilation and reloading of that servlet in server software.
+
+ If we perform modifications of an existing JSP page it is not required to perform recompilation and reloading of that application into the server, because JSP pages are auto complied and auto loaded.
+
+6. if we prepare web applications by using only servlet then it is very much difficult to separate Presentation logic and business logic.
+
+if we prepare web applications by using JSP it is very simple to separate presentation logic and business logic because in jsp pages we will use html tags to prepare presentation logic and we will use JSP tags to prepare business logic.
+
+
+JSP
+---
+1. it is a server side technology it was designed on the basis of J2SE and Servlet API. the main purpose of JSP technology is to reduce or avoid java code in web applications.
+
+2. in web applications jsp pages are executed by running Servlet internally. if we submit request to a particular JSP pages the jsp container will translate the jsp page to servlet internally and the container will generate a response by executing the translated Servlet 
+only.
+
+In General
+1. we are able to prepare web application by using servlets But not suggestable.
+2. we are able to prepare web application by using only jsp pages but not suggestable.
+3. it is suggestable to use both servlets and jsp pages together to prepare web applications.
+
+JSP Elements
+------------
+to prepare JSP pages we have to use the following 
+1. JSP Directives
+2. JSP Scripting Elements
+3. JSP actions
+
+							JSP Elements
+							     |
+							     |
+---------------|----------------------------------------------|------------------------------------------------|
+	JSP Directives                                Scripting  elements                                 JSP actions
+	       |                                             |                                                 |
+page        Include    Taglib                                |                                                 |
+directive    directive   directive                           |	                              standard actions     custom actions
+					declarations    scriplets     expressions
+
+
+
+JSP Directives
+---------------
+the main purpose of jsp directives is 
+1. to define present page characteristics
+2. to include the target based content in the present jsp page
+3. to make available a user defined tag library in the present jsp page.
+
+there are three types of jsp directives
+1. page directive
+-----------------
+the main purpose of page directive is to define present JSP page characteristics.
+a) to define the content type in the present jsp page.
+b) to import the required java packages.
+c) to define error pages
+d) to allow or not allow exception session implicit Objects
+e) to define some description about the present jsp page
+
+syntax
+-------
+<%@page[AttributesList]%>
+
+page Directive attributes.
+==========================
+1. language
+2. contentType
+3. extends
+4. import
+5. info
+6. session
+
+2. Include directive
+--------------------
+Same like Include mechanism in servlets, The main purpose of include directive is to include the target resource content into the present jsp page.
+
+syntax
+------
+<%@include file="filename"%>
+
+3. Taglib directive
+
+
