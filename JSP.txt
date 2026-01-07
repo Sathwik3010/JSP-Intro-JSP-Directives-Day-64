@@ -51,10 +51,10 @@ to prepare JSP pages we have to use the following
 							     |
 ---------------|----------------------------------------------|------------------------------------------------|
 	JSP Directives                                Scripting  elements                                 JSP actions
-	       |                                             |                                                 |
+	       |                                                 |                                                 |
 page        Include    Taglib                                |                                                 |
 directive    directive   directive                           |	                              standard actions     custom actions
-					declarations    scriplets     expressions
+					                      declarations    scriplets     expressions
 
 
 
@@ -97,5 +97,6 @@ syntax
 <%@include file="filename"%>
 
 3. Taglib directive
+
 
 
